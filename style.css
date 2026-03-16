@@ -1,14 +1,42 @@
 body {
-  background-image: url("images/blacktoucan.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  color: #dbfe87;
+  color: #25a18e;
   font-family: sans-serif;
   padding: 20px;
 }
 
 h1,
 h6 {
-  color: #dbfe87;
+  color: #25a18e;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+body {
+  background-color: white;
+}
+
+div {
+  border-style: solid;
+  margin: 10px;
+  text-align: center;
+}
+
+.box1 {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.box2 {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.box3 {
+  grid-column-start: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
