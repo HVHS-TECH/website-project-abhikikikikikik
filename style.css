@@ -1,0 +1,14 @@
+body {
+  background-image: url("images/blacktoucan.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #dbfe87;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+h1,
+h6 {
+  color: #dbfe87;
+}
