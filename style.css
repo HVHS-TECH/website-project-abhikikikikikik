@@ -1,18 +1,35 @@
 body {
-  color: #25a18e;
+  background-color: #2d4654;
+  color: #dbfe87;
   font-family: sans-serif;
   padding: 20px;
   margin: 0;
 }
 
-/* Layout for the Top Bar (Home/Search) */
 .top-nav {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
 }
 
-/* Layout for the Main Nav Bar */
+/* Removed the border and background here */
+.box-item {
+  padding: 5px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.box-item a {
+  text-decoration: none;
+  color: #dbfe87;
+  transition: color 0.2s;
+}
+
+/* Added a hover effect so it feels like a button */
+.box-item a:hover {
+  color: #25a18e;
+}
+
 .main-nav {
   display: flex;
   border: 1px solid #25a18e;
@@ -32,22 +49,21 @@ body {
   border-right: none;
 }
 
-/* Photo and Heading Side-by-Side */
 .content-wrapper {
   display: flex;
   align-items: flex-start;
-  gap: 40px; /* Space between image and text */
+  gap: 40px;
 }
 
 .photo-container {
-  flex: 2; /* Makes image area larger */
+  flex: 2;
 }
 
 img {
-  width: 100%; /* Responds to the container size */
-  max-width: 600px; /* Adjust this to fit your screen nicely */
+  width: 100%;
+  max-width: 600px;
   height: auto;
-  border: 1px solid #ccc;
+  border: 1px solid #374b4a;
 }
 
 .text-content {
@@ -58,19 +74,14 @@ img {
   font-size: 3rem;
   line-height: 1.1;
   margin: 0;
+  color: #25a18e;
 }
 
-.text-content span {
-  font-size: 1.2rem;
-  font-weight: normal;
-}
-
-/* Simple Dropdown Logic */
 .dropdown-content {
   display: none;
   position: absolute;
-  background: white;
-  border: 1px solid #25a18e;
+  background: #25a18e;
+  border: 1px solid #374b4a;
   width: 100%;
   left: 0;
   top: 100%;
@@ -85,20 +96,9 @@ img {
   display: block;
   padding: 10px;
   text-decoration: none;
-  color: #25a18e;
+  color: #dbfe87;
 }
 
 .dropdown-content a:hover {
-  background: #f1f1f1;
-}
-
-/* Styling for buttons */
-.box-item {
-  border: 1px solid #25a18e;
-  padding: 5px 15px;
-}
-
-.box-item a {
-  text-decoration: none;
-  color: inherit;
+  background: #374b4a;
 }
