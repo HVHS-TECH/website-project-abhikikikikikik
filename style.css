@@ -1,5 +1,5 @@
 body {
-  background-color: #2d4654;
+  background-color: #374b4a;
   color: #dbfe87;
   font-family: sans-serif;
   padding: 20px;
@@ -12,9 +12,8 @@ body {
   margin-bottom: 10px;
 }
 
-/* Removed the border and background here */
 .box-item {
-  padding: 5px 0;
+  padding: 10px 0;
   cursor: pointer;
   font-weight: bold;
 }
@@ -25,7 +24,6 @@ body {
   transition: color 0.2s;
 }
 
-/* Added a hover effect so it feels like a button */
 .box-item a:hover {
   color: #25a18e;
 }
@@ -67,7 +65,7 @@ img {
 }
 
 .text-content {
-  flex: 1;
+  flex: 5;
 }
 
 .text-content h1 {
@@ -80,8 +78,8 @@ img {
 .dropdown-content {
   display: none;
   position: absolute;
-  background: #25a18e;
-  border: 1px solid #374b4a;
+  background: #374b4a;
+  border: 1px solid #25a18e;
   width: 100%;
   left: 0;
   top: 100%;
@@ -100,5 +98,5 @@ img {
 }
 
 .dropdown-content a:hover {
-  background: #374b4a;
+  background: #25a18e;
 }
