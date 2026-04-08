@@ -98,7 +98,16 @@ body {
 }
 
 .photo-container {
-  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  width: 850px;
+  gap: 50px;
+  flex-shrink: 0;
+  align-items: flex-start;
+}
+
+.photo-container img:first-child {
+  flex-basis: 100%;
 }
 
 .text-content {
