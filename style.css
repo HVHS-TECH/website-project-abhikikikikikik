@@ -9,6 +9,7 @@ body {
   background-color: #006400;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 12px 60px;
 }
 
@@ -20,8 +21,32 @@ body {
   transition: color 0.3s ease;
 }
 
-.top-item a:hover {
-  color: #c9ffca;
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 4px;
+  padding: 2px 8px;
+}
+
+.search-input {
+  border: none;
+  padding: 4px;
+  font-size: 0.8rem;
+  outline: none;
+  width: 140px;
+  font-family: sans-serif;
+}
+
+.search-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #333;
+  border-left: 1px solid #ddd;
+  margin-left: 5px;
+  padding-left: 8px;
 }
 
 .main-nav {
@@ -39,10 +64,6 @@ body {
   color: white;
   cursor: pointer;
   transition: color 0.3s ease;
-}
-
-.nav-item:hover {
-  color: #e2a34f;
 }
 
 .nav-label {
@@ -81,7 +102,6 @@ body {
 
 .dropdown-content a:hover {
   background-color: #f1f1f1;
-  color: #e2a34f;
 }
 
 .dropdown:hover .dropdown-content {
@@ -106,8 +126,17 @@ body {
   align-items: flex-start;
 }
 
+.photo-container img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
 .photo-container img:first-child {
   flex-basis: 100%;
+  width: 600px;
+  height: 400px;
 }
 
 .text-content {
@@ -121,6 +150,41 @@ body {
   color: #25a18e;
 }
 
+.info-panel {
+  background-color: #008000;
+  border: 6px solid #ffcc00;
+  padding: 40px;
+  margin: 50px auto;
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.info-text {
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  flex: 1;
+}
+
+.info-text span {
+  color: #ffd700;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.info-image img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 25px;
+  border: 6px solid #ffcc00;
+  flex-shrink: 0;
+}
+
 .intro {
   max-width: 900px;
   margin: 60px auto;
@@ -132,7 +196,6 @@ body {
   font-size: 3.5rem;
   margin-bottom: 20px;
   color: #006400;
-  text-align: center;
 }
 
 .intro p {
@@ -140,7 +203,6 @@ body {
   line-height: 1.6;
   color: #333333;
   font-weight: bold;
-  text-align: center;
 }
 
 .mammal-grid {
@@ -168,7 +230,6 @@ body {
   width: 100%;
   height: 220px;
   object-fit: cover;
-  display: block;
 }
 
 .card-info {
@@ -185,5 +246,4 @@ body {
   margin: 0;
   color: #000;
   font-family: "Arial Black", sans-serif;
-  text-decoration: none;
 }

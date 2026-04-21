@@ -4,19 +4,40 @@
     <meta charset="UTF-8" />
     <title>The Animal Kingdom</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="images/png" href="images/tigerfavicon.png" />
+    <link rel="icon" type="image/png" href="images/tigerfavicon.png" />
   </head>
   <body>
     <header class="site-header">
       <div class="top-bar">
         <div class="top-item"><a href="index.html">HOME 🏠︎</a></div>
-        <div class="top-item"><a href="#">SEARCH 🔍︎</a></div>
+
+        <div class="top-item dropdown">
+          <div
+            class="nav-label"
+            style="
+              color: white;
+              font-size: 0.75rem;
+              cursor: pointer;
+              letter-spacing: 1.5px;
+            "
+          >
+            Search / Quick Links ▾
+          </div>
+          <div class="dropdown-content" style="right: 0; left: auto">
+            <a href="mammals.html">Mammals</a>
+            <a href="clades.html">Clades</a>
+            <a href="vertebrates.html">Vertebrates</a>
+            <a href="invertebrates.html">Invertebrates</a>
+            <a href="migrations.html">Migration</a>
+            <a href="hibernation.html">Hibernation</a>
+            <a href="climates.html">Climates</a>
+          </div>
+        </div>
       </div>
 
       <nav class="main-nav">
         <div class="nav-item dropdown">
-          <span class="nav-icon"></span>
-          <span class="nav-label"><h2>ANIMAL KINGDOM</h2></span>
+          <div class="nav-label"><h2>ANIMAL KINGDOM</h2></div>
           <div class="dropdown-content">
             <a href="mammals.html">Mammals</a>
             <a href="clades.html">Clades</a>
@@ -24,8 +45,7 @@
         </div>
 
         <div class="nav-item dropdown">
-          <span class="nav-icon"></span>
-          <span class="nav-label"><h2>ANIMAL CLASSIFICATIONS</h2></span>
+          <div class="nav-label"><h2>ANIMAL CLASSIFICATIONS</h2></div>
           <div class="dropdown-content">
             <a href="vertebrates.html">Vertebrates</a>
             <a href="invertebrates.html">Invertebrates</a>
@@ -33,8 +53,7 @@
         </div>
 
         <div class="nav-item dropdown">
-          <span class="nav-icon"></span>
-          <span class="nav-label"><h2>CLIMATES</h2></span>
+          <div class="nav-label"><h2>CLIMATES</h2></div>
           <div class="dropdown-content">
             <a href="migrations.html">Migration</a>
             <a href="hibernation.html">Hibernation</a>
