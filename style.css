@@ -1,79 +1,84 @@
 body {
-  background-color: #ffffff;
-  font-family: "Arial Black", Gadget, sans-serif;
   margin: 0;
-  padding: 0;
+  background: #fff;
+  font-family: "Arial Black", Arial, sans-serif;
 }
 
 .top-bar {
-  background-color: #006400;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #006400;
   padding: 12px 60px;
 }
 
-.top-item a {
-  color: white;
+.top-item a,
+.top-item .nav-label {
+  color: #fff;
   text-decoration: none;
-  font-size: 0.75rem;
-  letter-spacing: 1.5px;
-  transition: color 0.3s ease;
+  font-size: 12px;
+}
+
+.top-item a:hover {
+  color: #dcdcdc;
 }
 
 .search-container {
   display: flex;
   align-items: center;
-  background-color: white;
+  background: #fff;
   border-radius: 4px;
-  padding: 2px 8px;
+  padding: 3px 8px;
 }
 
 .search-input {
-  border: none;
+  width: 130px;
   padding: 4px;
-  font-size: 0.8rem;
+  border: none;
   outline: none;
-  width: 140px;
-  font-family: sans-serif;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
 }
 
-.search-btn {
+.search-button {
   background: none;
   border: none;
-  cursor: pointer;
-  font-size: 0.9rem;
-  color: #333;
   border-left: 1px solid #ddd;
   margin-left: 5px;
-  padding-left: 8px;
+  padding-left: 6px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
 }
 
 .main-nav {
-  background-color: #00a600;
   display: flex;
   justify-content: center;
-  gap: 100px;
-  padding: 25px 0 35px 0;
+  gap: 80px;
+  padding: 25px 0 30px;
+  background: #00a600;
 }
 
 .nav-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: white;
+  color: #fff;
   cursor: pointer;
-  transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+  color: #e0e0e0;
 }
 
 .nav-label {
-  font-size: 0.8rem;
+  margin-top: 8px;
+  font-size: 13px;
   font-weight: bold;
-  margin-top: 10px;
 }
 
 .nav-icon {
-  font-size: 2.5rem;
+  font-size: 38px;
 }
 
 .dropdown {
@@ -84,24 +89,21 @@ body {
   display: none;
   position: absolute;
   top: 100%;
-  background-color: white;
-  min-width: 200px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-  z-index: 10;
+  min-width: 180px;
+  background: #fff;
 }
 
 .dropdown-content a {
-  color: #333;
-  padding: 12px 20px;
-  text-decoration: none;
   display: block;
-  font-family: sans-serif;
-  font-size: 0.9rem;
-  font-weight: normal;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
+  background: #f1f1f1;
 }
 
 .dropdown:hover .dropdown-content {
@@ -110,33 +112,31 @@ body {
 
 .content-wrapper {
   display: flex;
-  padding: 80px 100px;
-  gap: 80px;
   max-width: 1300px;
   margin: 0 auto;
+  gap: 60px;
+  padding: 70px 80px;
   align-items: flex-start;
 }
 
 .photo-container {
   display: flex;
+  width: 800px;
+  gap: 30px;
   flex-wrap: wrap;
-  width: 850px;
-  gap: 50px;
-  flex-shrink: 0;
-  align-items: flex-start;
 }
 
 .photo-container img {
-  width: 250px;
-  height: 250px;
+  width: 230px;
+  height: 230px;
+  border-radius: 12px;
   object-fit: cover;
-  border-radius: 15px;
 }
 
 .photo-container img:first-child {
+  width: 550px;
+  height: 380px;
   flex-basis: 100%;
-  width: 600px;
-  height: 400px;
 }
 
 .text-content {
@@ -144,45 +144,44 @@ body {
 }
 
 .text-content h1 {
-  font-size: 4.5rem;
-  line-height: 0.9;
   margin: 0;
+  font-size: 65px;
+  line-height: 1;
   color: #25a18e;
 }
 
 .info-panel {
-  background-color: #008000;
-  border: 6px solid #ffcc00;
-  padding: 40px;
-  margin: 50px auto;
-  max-width: 1100px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 35px;
+  gap: 30px;
+  justify-content: space-between;
+  background: #00a300;
+  border: 5px solid #23652c;
 }
 
 .info-text {
-  color: white;
-  font-family: Arial, sans-serif;
-  font-size: 1.1rem;
-  line-height: 1.8;
   flex: 1;
+  color: #fff;
+  font-size: 17px;
+  line-height: 1.7;
+  font-family: Arial, sans-serif;
 }
 
 .info-text span {
   color: #ffd700;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .info-image img {
-  width: 350px;
-  height: 350px;
+  width: 320px;
+  height: 320px;
+  border-radius: 20px;
+  border: 5px solid #23652c;
   object-fit: cover;
-  border-radius: 25px;
-  border: 6px solid #ffcc00;
-  flex-shrink: 0;
 }
 
 .intro {
@@ -193,57 +192,53 @@ body {
 }
 
 .intro h1 {
-  font-size: 3.5rem;
-  margin-bottom: 20px;
+  font-size: 50px;
   color: #006400;
 }
 
 .intro p {
-  font-size: 1.2rem;
+  color: #333;
+  font-size: 18px;
   line-height: 1.6;
-  color: #333333;
   font-weight: bold;
 }
 
 .mammal-grid {
   display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding: 50px;
-  flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
+  justify-content: center;
+  gap: 25px;
+  padding: 50px;
+  flex-wrap: wrap;
 }
 
 .animal-card {
-  background-color: white;
-  border: 1px solid #e0e0e0;
-  width: 320px;
+  width: 300px;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #e0e0e0;
   text-decoration: none;
   color: inherit;
 }
 
 .animal-card img {
   width: 100%;
-  height: 220px;
+  height: 210px;
   object-fit: cover;
 }
 
 .card-info {
-  padding: 25px;
-  text-align: center;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   min-height: 80px;
+  padding: 20px;
 }
 
 .card-info h3 {
-  font-size: 1.6rem;
   margin: 0;
+  font-size: 24px;
   color: #000;
-  font-family: "Arial Black", sans-serif;
 }
